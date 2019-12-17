@@ -13,7 +13,7 @@ public class story3
     public void story3()
     {
         this.story3 = story3;
-    }//end story3
+    }//end void story3
 
     public void story3a()
     {
