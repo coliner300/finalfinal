@@ -128,7 +128,7 @@ public class runDriver
                     }//end second second if
                 }//end answer2 first if
             }
-            else if(first.equals("No") || first.equals("no")) {
+                if(first.equals("No") || first.equals("no")) {
                 System.out.println(storysecondd.toString());
                 System.out.println();
                 System.out.println(story2.getStory2d());
@@ -148,26 +148,22 @@ public class runDriver
             System.out.println(story3.getStory3());
             answer = 0;
             answer = user.nextInt();
-            if(answer == 1)
-            {
+            if(answer == 1) {
                 System.out.println(storythirda.toString());
                 System.out.println();
                 System.out.println(story3.getStory3a());
                 System.out.println();
                 answer = 0;
                 answer = user.nextInt();
-                if(answer == 1)
-                {
+                if (answer == 1) {
                     System.out.println(storythirdb.toString());
                     System.out.println();
                     System.out.println(story3.getStory3b());
                     System.out.println();
                     answer = 0;
                     answer = user.nextInt();
-                    if(answer == 2)
-                    {
-                        for(int pew = 0; pew < 5; pew++)
-                        {
+                    if (answer == 2) {
+                        for (int pew = 0; pew < 5; pew++) {
                             System.out.println("Pew Pew");//makes the imaginary sounds of a pew pew five times
                         }//end for loop
                         System.out.println(storythirdd.toString());
@@ -176,26 +172,22 @@ public class runDriver
                         System.out.println();
                         System.out.println(story1.getMessage5());
                         System.out.println();
-                        if(storythirdd.compareTo(maxDays) == -1)
-                        {
+                        if (storythirdd.compareTo(maxDays) == -1) {
                             System.out.println("You didn't survive for the max amount of days. Try again to see if you can get the max amount of days.");
                         } else {
                             System.out.println("You survived for the max amount of days.");
                         }//end else
                         answer = 0;
                     }//end first question third if answer 2
-                    if(answer == 1)
-                    {
-                        for(int swing = 0; swing < 5; swing++)
-                        {
+                    if (answer == 1) {
+                        for (int swing = 0; swing < 5; swing++) {
                             System.out.println("Swoosh, Smack!");
                         }//end for loop
                         System.out.println(storythirde.toString());
                         System.out.println();
                         System.out.println(story3.getStory3e());
                         System.out.println();
-                        if(storythirde.compareTo(maxDays) == -1)
-                        {
+                        if (storythirde.compareTo(maxDays) == -1) {
                             System.out.println("You didn't survive for the max amount of days. Try again to see if you can get the max amount of days.");
                         } else {
                             System.out.println("You survived for the max amount of days.");
@@ -204,38 +196,34 @@ public class runDriver
                         answer = 0;
                     }
                 }
-                if(answer == 2)
-                {
+                if (answer == 2) {
                     System.out.println(storythirdc.toString());
                     System.out.println();
                     System.out.println(story3.getStory3c());
                     System.out.println();
-                    if(storythirdc.compareTo(maxDays) == -1)
-                    {
+                    if (storythirdc.compareTo(maxDays) == -1) {
                         System.out.println("You didn't survive for the max amount of days. Try again to see if you can get the max amount of days.");
                     } else {
                         System.out.println("You survived for the max amount of days.");
                     }//end else
                     answer = 0;
                 }//end first second if
-            }//end if question 2 answer 1
 
-        }//end second if
-        else if(answer ==2)
-        {
+                }//end if question 2 answer 1
+            }
+        if (answer == 2) {
             System.out.println(storythirdf.toString());
             System.out.println();
             System.out.println(story3.getStory3f());
             System.out.println();
             answer = 0;
-            if(storythirdf.compareTo(maxDays) == -1)
-            {
+            if (storythirdf.compareTo(maxDays) == -1) {
                 System.out.println("You didn't survive for the max amount of days. Try again to see if you can get the max amount of days.");
             } else {
                 System.out.println("You survived for the max amount of days.");
             }//end else
-        }//end else if answer 2 layer one
-        else if(answer != 1 && answer != 0 || first != "yes" && first != "no")
+        }//end second if
+        if(answer != 1 && answer != 0 || first != "yes" && first != "no")
         {
                 System.out.println("Please enter a valid input");
         }//end else if
